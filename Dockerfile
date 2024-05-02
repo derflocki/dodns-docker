@@ -1,6 +1,8 @@
-FROM alpine:3.4
+FROM alpine:3.16
 
-MAINTAINER Sergey Nuzhdin <ipaq.lw@gmail.com>
+MAINTAINER Florian Dorn <florian.dorn@gmail.com>
+
+RUN apk update && apk add curl
 
 ADD run.sh /opt/run.sh
 
